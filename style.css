@@ -9,31 +9,21 @@ body{
     grid-template-rows: 100px 420px 1210px 150px;
     gap: 10px;
 }
+body >*{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
 header{
     background-color: #6E3CBC;
     font-size: 40px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
 }
 section{
     background-color: #7267CB;
-    font-size: 40px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
 }
 main{
     background-color: #98BAE7;
-    font-size: 40px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
 }
 footer{
     background-color: #B8E4F0;
-    font-size: 40px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
 }
