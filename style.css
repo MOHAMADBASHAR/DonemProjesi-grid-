@@ -6,23 +6,77 @@
 body{
     background-color: #DBDADF;
     display: grid;
-    grid-template-rows: 100px 420px 1210px 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 420px 1210px 100px;
     gap: 10px;
 }
-body >*{
-    display: grid;
-    justify-items: center;
+header{
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#top-header{
+    background-color: #FFF8F8;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-header{
-    background-color: #6E3CBC;
-    font-size: 40px;
+#logo{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+#search-box{
+    background-color: #DBDADF;
+    border-radius: 20px;
+    width: 300px;
+    height: 30px;
+    background-image: url(images/icons8-search-30.png);
+    background-repeat: no-repeat;
+    background-position-x: 260px;
+}
+#search{
+    width: 300px;
+    height: 30px;
+    margin: 0 0 0 5px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+#login-basket{
+    width: 240px;
+    font-size: 15px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul {
+    list-style: none;
+    font-size: 15px;
+    display: flex;
+    margin-left: 10px;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.login-basket-flex{
+    color: black;
+    text-decoration: none;
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 section{
     background-color: #7267CB;
 }
 main{
-    background-color: #98BAE7;
+    background-color: #98BAE7; 
 }
 footer{
     background-color: #B8E4F0;
