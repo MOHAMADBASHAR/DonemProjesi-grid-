@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 body{
     background-color: #DBDADF;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 420px 1210px 100px;
-    gap: 10px;
+    grid-template-rows: 130px 420px 1220px 100px;
 }
 header{
     font-size: 30px;
@@ -22,6 +24,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 #logo{
     text-decoration: none;
@@ -67,6 +70,9 @@ header{
 .login-basket-flex:hover{
 opacity: 0.5;
 }
+nav{
+    margin-bottom: 20px;
+}
 nav ul {
     list-style: none;
     font-size: 15px;
@@ -84,15 +90,101 @@ nav ul li a {
 nav ul li a:hover{
     opacity: 0.5;
 }
-section{
+#slider{
     background-image: url(images/slider.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 20px;
 }
-main{
-    background-color: #98BAE7; 
+#offer{
+    width: 100vw;
+    height: 350px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#offer div{
+    width: 40vw;
+    height: 350px;
+    background-color: aqua;
+}
+#offer-section-right{
+    background-image: url(images/deals.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw;
+    height: 350px;
+    padding: 30px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+#offer-section-left{
+    background-image: url(images/deals1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.offer-section *{
+    color: white;
+    margin: 10px 0 0 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#bestSeller{
+    width: 100vw;
+    height: 370px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+#best-seller-header{
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+#product-container{
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+.product-section{
+    width: 20vw;
+    height: 350px;
+    margin-top: 50px;
+    transition: 0.5s all;
+}
+.product-section:hover{
+    opacity: 0.5;
+}
+.product-section a{
+    text-decoration: none;
+    color: black;
+}
+.product-section a img {
+    width: 20vw;
+    height: 175px;
+    object-fit: cover;
+}
+.product-section a .dicription{
+    text-align: center;
+    width: 20vw;
+}
+#catagory{
+    width: 100vw;
+    height: 500px;
+    background-color: #FFF8F8;
+    margin-bottom: 20px;
 }
 footer{
     background-color: #B8E4F0;
 }
+
